@@ -17,5 +17,6 @@ La herramienta permite obtener:
 
 El objetivo principal es servir como apoyo educativo para estudiantes que requieren resolver cálculos básicos de física de forma intuitiva.
 
+Puedes acceder a la versión desplegada vía GitHub Pages aquí:
 
-
+https://pmps8.github.io/Calculum/
