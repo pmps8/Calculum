@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Magnitudes Físicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Magnitudes Físicas</h1>
+        <h2>Nombre: [Tu Nombre]</h2>
+    </header>
+
+    <main>
+        <!-- Formulario para cada magnitud -->
+        <section id="velocidad">
+            <h3>Velocidad</h3>
+            <input type="number" id="distancia_vel" placeholder="Distancia (m)">
+            <input type="number" id="tiempo_vel" placeholder="Tiempo (s)">
+            <button onclick="calcularVelocidad()">Calcular</button>
+            <p id="resultado_vel"></p>
+        </section>
+
+        <section id="aceleracion">
+            <h3>Aceleración</h3>
+            <input type="number" id="vel_ini" placeholder="Velocidad Inicial (m/s)">
+            <input type="number" id="vel_fin" placeholder="Velocidad Final (m/s)">
+            <input type="number" id="tiempo_acel" placeholder="Tiempo (s)">
+            <button onclick="calcularAceleracion()">Calcular</button>
+            <p id="resultado_acel"></p>
+        </section>
+
+        <section id="fuerza">
+            <h3>Fuerza</h3>
+            <input type="number" id="masa_fuerza" placeholder="Masa (kg)">
+            <input type="number" id="acel_fuerza" placeholder="Aceleración (m/s²)">
+            <button onclick="calcularFuerza()">Calcular</button>
+            <p id="resultado_fuerza"></p>
+        </section>
+
+        <section id="trabajo">
+            <h3>Trabajo</h3>
+            <input type="number" id="fuerza_trab" placeholder="Fuerza (N)">
+            <input type="number" id="distancia_trab" placeholder="Distancia (m)">
+            <input type="number" id="angulo_trab" placeholder="Ángulo (°)">
+            <button onclick="calcularTrabajo()">Calcular</button>
+            <p id="resultado_trab"></p>
+        </section>
+
+        <section id="energia_cinetica">
+            <h3>Energía Cinética</h3>
+            <input type="number" id="masa_cin" placeholder="Masa (kg)">
+            <input type="number" id="velocidad_cin" placeholder="Velocidad (m/s)">
+            <button onclick="calcularEnergiaCinetica()">Calcular</button>
+            <p id="resultado_cin"></p>
+        </section>
+
+        <section id="energia_potencial">
+            <h3>Energía Potencial Gravitatoria</h3>
+            <input type="number" id="masa_pot" placeholder="Masa (kg)">
+            <input type="number" id="altura_pot" placeholder="Altura (m)">
+            <button onclick="calcularEnergiaPotencial()">Calcular</button>
+            <p id="resultado_pot"></p>
+        </section>
+
+        <section id="densidad">
+            <h3>Densidad</h3>
+            <input type="number" id="masa_dens" placeholder="Masa (kg)">
+            <input type="number" id="volumen_dens" placeholder="Volumen (m³)">
+            <button onclick="calcularDensidad()">Calcular</button>
+            <p id="resultado_dens"></p>
+        </section>
+
+        <section id="presion">
+            <h3>Presión</h3>
+            <input type="number" id="fuerza_pres" placeholder="Fuerza (N)">
+            <input type="number" id="area_pres" placeholder="Área (m²)">
+            <button onclick="calcularPresion()">Calcular</button>
+            <p id="resultado_pres"></p>
+        </section>
+
+        <section id="carga_electrica">
+            <h3>Carga Eléctrica</h3>
+            <input type="number" id="intensidad_carga" placeholder="Intensidad (A)">
+            <input type="number" id="tiempo_carga" placeholder="Tiempo (s)">
+            <button onclick="calcularCargaElectrica()">Calcular</button>
+            <p id="resultado_carga"></p>
+        </section>
+
+        <section id="ley_ohm">
+            <h3>Ley de Ohm</h3>
+            <input type="number" id="voltaje_ohm" placeholder="Voltaje (V)">
+            <input type="number" id="resistencia_ohm" placeholder="Resistencia (Ω)">
+            <button onclick="calcularLeyOhm()">Calcular</button>
+            <p id="resultado_ohm"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
